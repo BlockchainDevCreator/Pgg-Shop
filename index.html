@@ -5,27 +5,411 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
+        />
+
         <link rel="stylesheet" href="./index.css" />
 
         <title>PGG</title>
     </head>
     <body>
+        <div id="importantInfo">
+            <b>Attention !</b>
+            <b
+                >This isn't the orgrinal PGG page. The purpose of this page is
+                to practise my skills
+            </b>
+            <b>All photos and page's layout come from the orginal page </b>
+            <a href="https://sklep.pgg.pl/" target="_blank">Orginal Page</a>
+        </div>
+        <div id="scrollToTop"></div>
         <div id="nav">
             <div id="nav-icons">
-                <div id="nav-icons-moblie-shop"></div>
-                <div id="nav-icons-logo"></div>
-                <div id="nav-icons-moblie-burger"></div>
+                <div id="nav-icons-moblie-shop">(0)</div>
+                <img
+                    id="nav-icons-logo"
+                    src="https://static.pgg.pl/shop/img/logo_pgg_biale_male.png"
+                />
+                <div id="nav-icons-moblie-burger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </div>
             <div id="nav-options">
-                <a href="#">1</a>
-                <a href="#">1</a>
-                <a href="#">1</a>
-                <a href="#">1</a>
-                <a href="#">1</a>
-                <a href="#">1</a>
-                <a href="#">1</a>
+                <a href="#">Aktualności</a>
+                <a href="#">Fanpage</a>
+                <a href="#">Sklep</a>
+                <a href="#">Punkty odbioru</a>
+                <a href="#">Logowanie</a>
+                <a href="#">Rejestracja</a>
+                <a href="#"
+                    >Koszyk ( 0 ) <img src="./photos/cart-fill.svg"
+                /></a>
             </div>
         </div>
+        <header id="header">
+            <img
+                id="header-image"
+                src="./photos/Men.jpeg"
+                width="100%"
+                height="100%"
+            />
+            <div id="header-info">
+                <div id="header-info-dynamic">
+                    <p class="dynamicTextActive header-info-dynamic-text">
+                        Od początku sprzedaży węgla luzem dostępnego w
+                        kopalniach PGG S.A. obsłużyliśmy 129417 klientów, do
+                        których trafiło 647085 ton węgla w atrakcyjnej cenie.
+                    </p>
+                    <p class="dynamicTextActive header-info-dynamic-text">
+                        Od początku sprzedaży węgla luzem dostępnego w
+                        kopalniach PGG S.A. obsłużyliśmy 129417 klientów, do
+                        których trafiło 647085 ton węgla w atrakcyjnej cenie.
+                    </p>
+                </div>
+                <div id="header-info-dynamic-info">
+                    <p>
+                        Sprzedaż w sklepie internetowym odbywa się we wtorki i
+                        czwartki.
+                    </p>
+                    <p>
+                        Towar na półkę wystawiany jest od 16.00 i dostępny do
+                        wyczerpania zapasu.
+                    </p>
+                    <p>
+                        Nie przyjmujemy do realizacji zamówień złożonych
+                        telefonicznie ani drogą mailową.
+                    </p>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div id="items">
+                <div class="item">
+                    <div class="item-content">
+                        <div class="item-photo grid-item-center-with-flex">
+                            <img
+                                src="./photos/orzech.jpg"
+                                height="97px"
+                                width="65px"
+                            />
+                        </div>
+                        <div class="item-name grid-item-center-with-flex">
+                            <strong> Kostka - Marcel</strong> 1000 kg luz
+                        </div>
+                        <div class="item-price grid-item-center-with-flex">
+                            <strong>od 1180,00 zł</strong> Brak towaru
+                        </div>
+                        <div class="item-place grid-item-center-with-flex">
+                            KWK Mysłowice-Wesoła
+                        </div>
+                        <div class="item-delivery grid-item-center-with-flex">
+                            <img src="./photos/minecart-loaded.svg" />
+                        </div>
+                        <div class="item-add grid-item-center-with-flex">
+                            <select>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="4">5</option>
+                            </select>
+                            <button>
+                                <img src="./photos/cart-fill.svg" />
+                            </button>
+                        </div>
+                    </div>
+
+                    <hr />
+                </div>
+                <div class="item">
+                    <div class="item-content">
+                        <div class="item-photo grid-item-center-with-flex">
+                            <img
+                                src="./photos/orzech.jpg"
+                                height="97px"
+                                width="65px"
+                            />
+                        </div>
+                        <div class="item-name grid-item-center-with-flex">
+                            <strong> Kostka - Marcel</strong> 1000 kg luz
+                        </div>
+                        <div class="item-price grid-item-center-with-flex">
+                            <strong>od 1180,00 zł</strong> Brak towaru
+                        </div>
+                        <div class="item-place grid-item-center-with-flex">
+                            KWK Mysłowice-Wesoła
+                        </div>
+                        <div class="item-delivery grid-item-center-with-flex">
+                            <img src="./photos/minecart-loaded.svg" />
+                        </div>
+                        <div class="item-add grid-item-center-with-flex">
+                            <select>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="4">5</option>
+                            </select>
+                            <button>
+                                <img src="./photos/cart-fill.svg" />
+                            </button>
+                        </div>
+                    </div>
+
+                    <hr />
+                </div>
+                <div class="item">
+                    <div class="item-content">
+                        <div class="item-photo grid-item-center-with-flex">
+                            <img
+                                src="./photos/orzech.jpg"
+                                height="97px"
+                                width="65px"
+                            />
+                        </div>
+                        <div class="item-name grid-item-center-with-flex">
+                            <strong> Kostka - Marcel</strong> 1000 kg luz
+                        </div>
+                        <div class="item-price grid-item-center-with-flex">
+                            <strong>od 1180,00 zł</strong> Brak towaru
+                        </div>
+                        <div class="item-place grid-item-center-with-flex">
+                            KWK Mysłowice-Wesoła
+                        </div>
+                        <div class="item-delivery grid-item-center-with-flex">
+                            <img src="./photos/minecart-loaded.svg" />
+                        </div>
+                        <div class="item-add grid-item-center-with-flex">
+                            <select>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="4">5</option>
+                            </select>
+                            <button>
+                                <img src="./photos/cart-fill.svg" />
+                            </button>
+                        </div>
+                    </div>
+
+                    <hr />
+                </div>
+                <div class="item">
+                    <div class="item-content">
+                        <div class="item-photo grid-item-center-with-flex">
+                            <img
+                                src="./photos/orzech.jpg"
+                                height="97px"
+                                width="65px"
+                            />
+                        </div>
+                        <div class="item-name grid-item-center-with-flex">
+                            <strong> Kostka - Marcel</strong> 1000 kg luz
+                        </div>
+                        <div class="item-price grid-item-center-with-flex">
+                            <strong>od 1180,00 zł</strong> Brak towaru
+                        </div>
+                        <div class="item-place grid-item-center-with-flex">
+                            KWK Mysłowice-Wesoła
+                        </div>
+                        <div class="item-delivery grid-item-center-with-flex">
+                            <img src="./photos/minecart-loaded.svg" />
+                        </div>
+                        <div class="item-add grid-item-center-with-flex">
+                            <select>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="4">5</option>
+                            </select>
+                            <button>
+                                <img src="./photos/cart-fill.svg" />
+                            </button>
+                        </div>
+                    </div>
+
+                    <hr />
+                </div>
+                <div class="item">
+                    <div class="item-content">
+                        <div class="item-photo grid-item-center-with-flex">
+                            <img
+                                src="./photos/orzech.jpg"
+                                height="97px"
+                                width="65px"
+                            />
+                        </div>
+                        <div class="item-name grid-item-center-with-flex">
+                            <strong> Kostka - Marcel</strong> 1000 kg luz
+                        </div>
+                        <div class="item-price grid-item-center-with-flex">
+                            <strong>od 1180,00 zł</strong> Brak towaru
+                        </div>
+                        <div class="item-place grid-item-center-with-flex">
+                            KWK Mysłowice-Wesoła
+                        </div>
+                        <div class="item-delivery grid-item-center-with-flex">
+                            <img src="./photos/minecart-loaded.svg" />
+                        </div>
+                        <div class="item-add grid-item-center-with-flex">
+                            <select>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="4">5</option>
+                            </select>
+                            <button>
+                                <img src="./photos/cart-fill.svg" />
+                            </button>
+                        </div>
+                    </div>
+
+                    <hr />
+                </div>
+                <div class="item">
+                    <div class="item-content">
+                        <div class="item-photo grid-item-center-with-flex">
+                            <img
+                                src="./photos/orzech.jpg"
+                                height="97px"
+                                width="65px"
+                            />
+                        </div>
+                        <div class="item-name grid-item-center-with-flex">
+                            <strong> Kostka - Marcel</strong> 1000 kg luz
+                        </div>
+                        <div class="item-price grid-item-center-with-flex">
+                            <strong>od 1180,00 zł</strong> Brak towaru
+                        </div>
+                        <div class="item-place grid-item-center-with-flex">
+                            KWK Mysłowice-Wesoła
+                        </div>
+                        <div class="item-delivery grid-item-center-with-flex">
+                            <img src="./photos/minecart-loaded.svg" />
+                        </div>
+                        <div class="item-add grid-item-center-with-flex">
+                            <select>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="4">5</option>
+                            </select>
+                            <button>
+                                <img src="./photos/cart-fill.svg" />
+                            </button>
+                        </div>
+                    </div>
+
+                    <hr />
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div id="footer-options">
+                <div id="footer-options-container">
+                    <div class="footer-options-item">
+                        <h5>Kontakt</h5>
+                        <ul>
+                            <li id="phone-Item"><p>32 717 00 00 (1)</p></li>
+                            <li id="time-Item">
+                                <div>
+                                    <p>
+                                        7<sup>00</sup> - 20<sup>00</sup> w dni
+                                        robocze
+                                    </p>
+                                    <p>
+                                        8<sup>00</sup> - 14<sup>00</sup> w
+                                        soboty
+                                    </p>
+                                </div>
+                            </li>
+                            <li id="mail-Item">
+                                <a href="#">sklep@pgg.pl</a>
+                            </li>
+                            <li id="contact-Item">
+                                <a href="#">Kontakt</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-options-item">
+                        <h5>O Nas</h5>
+                        <ul>
+                            <li>
+                                <a href="#">Regulamin sklepu i programu </a>
+                            </li>
+                            <li>
+                                <a href="#">Polityka Cookies </a>
+                            </li>
+                            <li>
+                                <a href="#">RODO</a>
+                            </li>
+                            <li>
+                                <a href="#">Mapa Strony</a>
+                            </li>
+                            <li>
+                                <a href="#">Kwalifikowani Dostawcy Węgla </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-options-item">
+                        <h5>Info dla klientów</h5>
+                        <ul>
+                            <li>
+                                <a href="#">Regulamin sklepu i programu </a>
+                            </li>
+                            <li>
+                                <a href="#">Reklamacje</a>
+                            </li>
+                            <li>
+                                <a href="#">Odstąpienie od umowy</a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    >Formularz - korekta danych osobowych</a
+                                >
+                            </li>
+                            <li>
+                                <a href="#">Instrukcja obsługi sklepu</a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-options-item">
+                        <h5>PEŁNOMOCNICTWA</h5>
+                        <ul>
+                            <li>
+                                <a href="#"
+                                    >Pełnomocnictwo do odbioru węgla
+                                    konfekcjonowanego
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#"
+                                    >Pełnomocnictwo do odbioru węgla luzem
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div id="footer-info">
+                <p id="footer-info-version">v2.122</p>
+                <p>POLSKA GRUPA GÓRNICZA S.A.</p>
+                <p>© 2022</p>
+            </div>
+        </footer>
     </body>
     <script src="./index.js"></script>
+    <script
+        src="https://kit.fontawesome.com/3fa56a7e0e.js"
+        crossorigin="anonymous"
+    ></script>
 </html>
